@@ -1,0 +1,31 @@
+.todo-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 18px 0 18px 60px;
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid rgb(172, 172, 172);
+
+    @media screen and (max-width: 645px) {
+        padding: 18px 0 18px 60px;
+    }
+
+.todo-item__icon  {
+    position: absolute;
+    left: 13px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    @media screen and (max-width: 645px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+    &__text.completed {
+        text-decoration: line-through;
+        color: rgb(116, 116, 116);
+    }
+}
